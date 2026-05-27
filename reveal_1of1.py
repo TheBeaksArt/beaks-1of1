@@ -29,7 +29,7 @@ except: pass
 # ─── Constants ─────────────────────────────────────────────────────────
 TOTAL = 1111
 PICK = 8
-TARGET_UNIX = 1779963600  # 2026-05-27T12:00:00Z = first ETH block at/after this
+TARGET_UNIX = 1779883200  # 2026-05-27T12:00:00Z = first ETH block at/after this
 CONFIRMATIONS = 10
 RPC = "https://ethereum-rpc.publicnode.com"
 
