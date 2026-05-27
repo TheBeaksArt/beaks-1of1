@@ -1,0 +1,11 @@
+{
+  "project": "The Beaks \u2014 1-of-1 token ID selection",
+  "total_supply": 1111,
+  "n_to_pick": 8,
+  "committed_at_utc": "2026-05-27T10:56:49.605234+00:00",
+  "commitment_sha256": "46d3459f2024c7fb2c2883d3285a294612fa50af7f9cd4994bedbda6642c5468",
+  "target_block_rule": "First Ethereum mainnet block with timestamp >= 2026-05-27T12:00:00Z, with 10+ confirmations.",
+  "algorithm": "sha256(salt_bytes || block_hash_bytes || counter[4 bytes BE]) -> uint32 -> mod 1111 + 1; skip duplicates; iterate until 8 unique IDs collected.",
+  "reveal_plan": "At/after target block + 10 confirmations: publish salt; anyone can verify sha256(salt) == commitment_sha256; anyone can re-run the algorithm and reproduce the same 8 IDs.",
+  "reveal_repo": "https://github.com/<your-org>/beaks-1of1   (push the script + this file)"
+}
